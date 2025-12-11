@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, ... </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css'>
+    <link rel='stylesheet' href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css'>
+    <link rel="icon" href="https://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Amazon-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="overlay2"></div>
+
+    <div class="address">
+        <div class="address-header">
+            <h4>Choose your location</h4>
+            <button id="close-address"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="address-body">
+            <form action="" method="post">
+                <p>Select a delivery location to see product availability and delivery options</p>
+                <button id="sign-in">Sign in to see your address</button>
+                <p id="pincode">or enter an indian pincode</p>
+                <input type="text" placeholder="" required>
+                <button id="apply">Apply</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="language">
+        <form action="" method="post">
+            <div>
+                <input type='radio' id='English' name='language' checked>
+                <label for="English">English - EN</label>
+            </div>
+            <div>
+                <input type='radio' id='Hindi' name='language'>
+                <label for="Hindi">हिन्दी - HI</label>
+            </div>
+            <div>
+                <input type='radio' id='Tamil' name='language'>
+                <label for="Tamil">தமிழ் - TA</label>
+            </div>
+            <div>
+                <input type='radio' id='Telugu' name='language'>
+                <label for="Telugu">తెలుగు - TE</label>
+            </div>
+            <div>
+                <input type='radio' id='Kannada' name='language'>
+                <label for="Kannada">ಕನ್ನಡ - KN</label>
+            </div>
+            <div>
+                <input type='radio' id='Malayalam' name='language'>
+                <label for="Malayalam">മലയാളം - ML</label>
+            </div>
+            <div>
+                <input type='radio' id='Bengali' name='language'>
+                <label for="Bengali">বাংলা - BN</label>
+            </div>
+            <div>
+                <input type='radio' id='Marathi' name='language'>
+                <label for="Marathi">मराठी - MR</label>
+            </div>
+        </form>
+        <p class="learn-more">Learn more</p>
+        <p class="shopping"><img src="assets/india.jpg" alt="india" style="height: 3vh;margin-right: 0.5rem;">You are
+            shopping on Amazon.in</p>
+        <p class="change-country">Change country/region</p>
+    </div>
+
+    <div class="account-list">
+        <div class="acc-header">
+            <button>Sign in</button>
+            <p>New Customer?<a href="#">Start here.</a></p>
+        </div>
+        <div class="acc-body">
+            <div class="your-list">
+                <h4>Your Lists</h4>
+                <p>Create a Wish List</p>
+                <p>Wish from Any Website</p>
+                <p>Baby Wish List</p>
+                <p>Discover your Style</p>
+                <p>Explore Showroom</p>
+            </div>
+            <div class="your-acc">
+                <h4>Your Account</h4>
+                <p>Your Account</p>
+                <p>Your Orders</p>
+                <p>Your Wishlist</p>
+                <p>Keep Shopping for</p>
+                <p>Your Recommendations</p>
+                <p>Your Prime Membership</p>
+                <p>Your Prime Video</p>
+                <p>Your Subscribe & Save Items</p>
+                <p>Membership & Subscriptions</p>
+                <p>Your Seller Account</p>
+                <p>Manage your Content and Devices</p>
+                <p>Register for a Free Business Account</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas">
+        <p><i class='bx bxs-user-circle'></i> Hello, sign in</p>
+        <div class="canvas-body">
+            <div>
+                <h3>Trending</h3>
+                <p>Bestsellers</p>
+                <p>New Releases</p>
+                <p>Movers & Shakers</p>
+            </div>
+            <div>
+                <h3>Digital Content and Devices</h3>
+                <p><span>Echo & Alexa</span><i class="fa-solid fa-greater-than"></i></p>
+                <p><span>Fire Tv</span><i class="fa-solid fa-greater-than"></i></p>
+                <p><span>Kindle E-readers & eBooks</span><i class="fa-solid fa-greater-than"></i></p>
+                <p><span>Audible AudioBooks</span><i class="fa-solid fa-greater-than"></i></p>
+                <p><span>Amazon Prime Video</span><i class="fa-solid fa-greater-than"></i></p>
+                <p><span>Amazon Prime Music</span><i class="fa-solid fa-greater-than"></i></p>
+            </div>
+            <div>
+                <h3>Shop by Category</h3>
+                <p><span>Mobiles, Computers</span><i class="fa-solid fa-greater-than"></i></p>
+                <p><span>Tv, Appliances, Electronics</span><i class="fa-solid fa-greater-than"></i></p>
+                <p><span>Men's Fashion</span><i class="fa-solid fa-greater-than"></i></p>
+                <p><span>Women's Fashion</span><i class="fa-solid fa-greater-than"></i></p>
+                <div class="shop" style="border-top: 1px solid rgb(217, 215, 215);">
+                    <p><span>Home, Kitchen, Pets</span><i class="fa-solid fa-greater-than"></i></p>
+                    <p><span>Beauty, Health, Grocery</span><i class="fa-solid fa-greater-than"></i></p>
+                    <p><span>Sports, Fitness, Bags, Luggage</span><i class="fa-solid fa-greater-than"></i></p>
+                    <p><span>Toys, Baby Products, Kids' Fashion</span><i class="fa-solid fa-greater-than"></i></p>
+                    <p><span>Car, Motorbike, Industrial</span><i class="fa-solid fa-greater-than"></i></p>
+                    <p><span>Books</span><i class="fa-solid fa-greater-than"></i></p>
+                    <p><span>Movies, Music & Video Games</span><i class="fa-solid fa-greater-than"></i></p>
+                </div>
+                <p class="see-shop"><span>See all</span><i class='bx  bx-chevron-down'
+                        style="font-size: 1.75rem;transform: translateY(-0.25rem);margin-right: 65%;"></i></p>
+            </div>
+            <div>
+                <h3>Programs & Features</h3>
+                <p><span>Gift Cards & Mobile Recharges</span><i class="fa-solid fa-greater-than"></i></p>
+                <p>Amazon Launchpad</p>
+                <p>Amazon Business</p>
+                <p><span>Handloom and Handicrafts</span></p>
+                <div class="program" style="border-top: 1px solid rgb(217, 215, 215);">
+                    <p>Amazon Saheli</p>
+                    <p>Amazon Custom</p>
+                    <p>Flight Tickets</p>
+                    <p>Buy more, Save more</p>
+                    <p>Clearance store</p>
+                    <p>International Brands</p>
+                </div>
+                <p class="see-program"><span>See all</span><i class='bx  bx-chevron-down'></i></p>
+            </div>
+            <div>
+                <h3>Help & Settings</h3>
+                <p>Your Account</p>
+                <p>Customer Service</p>
+                <p>Sign in</p>
+            </div>
+        </div>
+    </div>
+    <button id="close-offcanvas"><i class="fa-solid fa-xmark"></i></button>
+
+    <div class="fresh">
+        <div class="fresh-img">
+            <img src="assets/fresh.jpg" alt="" style="width: 14vw;">
+            <img src="assets/fresh_meat.jpg" alt="" style="width: 14vw;">
+        </div>
+        <p>Shop all groceries on Amazon</p>
+    </div>
+
+    <div class="prime">
+        <h1>Shopping plans <br> starting at ₹399/year</h1>
+        <p>Get FREE same/1-day delivery, Prime offers & more</p>
+        <div>
+            <img src="assets/prime.png" alt="" style="width: 100%; height: 30vh; aspect-ratio: 1/1;">
+            <button>Join Prime Now</button>
+            <img src="assets/amz-prime.png" alt="">
+        </div>
+    </div>
+
+    <div class="spons-mid">
+        <div class="sponsored">
+            <div class="sponsored-header">
+                <h4>Leave feedback</h4>
+                <button id="close-sponsore"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="sponsored-body">
+                <form action="" method="post">
+                    <h4>This ad is: (required)</h4>
+                    <div>
+                        <input type="checkbox" id="not-relevant" class="checkbox">
+                        <label for="not-relevant">Not relevant</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="not-appropriate" class="checkbox">
+                        <label for="not-appropriate">Not appropriate</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="not-working" class="checkbox">
+                        <label for="not-working">Not working</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="shown-too-often" class="checkbox">
+                        <label for="shown-too-often">Shown too often</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="helpful" class="checkbox">
+                        <label for="helpful">Helpful</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="other" class="checkbox">
+                        <label for="other">Other</label>
+                    </div>
+                    <h5 id="tell-us" style="line-height: 2rem;">Please tell us why (optional)</h5>
+                    <p style="font-size: 0.75rem;line-height: 1.5rem;">Do not include personal or sensitive information.
+                    </p>
+                    <textarea id="message-sponsore" cols="60" rows="4"></textarea>
+                    <p id="char-sponsore" style="font-size: 0.85rem;line-height: 2rem;">5000 characters left</p>
+                    <div style="text-align: end;margin-top: 0.8rem;">
+                        <button id="cancel-sponsore">Cancel</button>
+                        <button id="submit-sponsore" disabled>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="spons-mid1">
+        <div class="sponsored1">
+            <div class="sponsored-header1">
+                <h4>Leave feedback</h4>
+                <button id="close-sponsore1"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="sponsored-body1">
+                <form action="" method="post">
+                    <h4>This ad is: (required)</h4>
+                    <div>
+                        <input type="checkbox" id="not-relevant1" class="checkbox1">
+                        <label for="not-relevant1">Not relevant</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="not-appropriate1" class="checkbox1">
+                        <label for="not-appropriate1">Not appropriate</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="not-working1" class="checkbox1">
+                        <label for="not-working1">Not working</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="shown-too-often1" class="checkbox1">
+                        <label for="shown-too-often1">Shown too often</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="helpful1" class="checkbox1">
+                        <label for="helpful1">Helpful</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="other1" class="checkbox1">
+                        <label for="other1">Other</label>
+                    </div>
+                    <h5 id="tell-us1" style="line-height: 2rem;">Please tell us why (optional)</h5>
+                    <p style="font-size: 0.75rem;line-height: 1.5rem;">Do not include personal or sensitive information.
+                    </p>
+                    <textarea id="message-sponsore1" cols="60" rows="4"></textarea>
+                    <p id="char-sponsore1" style="font-size: 0.75rem;line-height: 2rem;">5000 characters left</p>
+                    <div style="text-align: end;margin-top: 0.8rem;">
+                        <button id="cancel-sponsore1">Cancel</button>
+                        <button id="submit-sponsore1" disabled>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="nav1">
+            <div class="bord one">
+                <img src="assets/amazon-logo.png" alt="amazon logo" onclick="location.reload()">
+                <p>.in</p>
+            </div>
+            <div class="bord two">
+                <i class='bx  bx-location'></i>
+                <div>
+                    <p>Delivering to Kolkata 700025</p>
+                    <p>Update Location</p>
+                </div>
+            </div>
+            <div class="three">
+                <Select>
+                    <option value="All" selected hidden>All</option>
+                    <option value="All Categories">All Categories</option>
+                    <option value="Alexa Skills">Alexa Skills</option>
+                    <option value="Amazon Devices">Amazon Devices</option>
+                    <option value="Amazon Fashion">Amazon Fashion</option>
+                    <option value="Amazon Fresh">Amazon Fresh</option>
+                    <option value="Amazon Fresh Meat">Amazon Fresh Meat</option>
+                    <option value="Amazon Pharmacy">Amazon Pharmacy</option>
+                    <option value="Appliances">Appliances</option>
+                    <option value="Apps & Games">Apps & Games</option>
+                    <option value="Audible AudioBooks">Audible AudioBooks</option>
+                    <option value="Baby">Baby</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Books">Books</option>
+                    <option value="Car & Motorbike">Car & Motorbike</option>
+                    <option value="Clothing & Accessories">Clothing & Accessories</option>
+                    <option value="Collectibles">Collectibles</option>
+                    <option value="Computers & Accessories">Computers & Accessories</option>
+                    <option value="Deals">Deals</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Gardens & Outdoors">Gardens & Outdoors</option>
+                    <option value="Gift Cards">Gift Cards</option>
+                    <option value="Grocery & Gourmet Foods">Grocery & Gourmet Foods</option>
+                    <option value="Health & Personal Care">Health & Personal Care</option>
+                    <option value="Home & Kitchen">Home & Kitchen</option>
+                    <option value="Industrial & Scientific">Industrial & Scientific</option>
+                    <option value="Jewelry">Jewelry</option>
+                    <option value="Kindle Store">Kindle Store</option>
+                    <option value="Luggage & Bags">Luggage & Bags</option>
+                    <option value="Luxury Beauty">Luxury Beauty</option>
+                    <option value="Movies and Tv Shows">Movies and Tv Shows</option>
+                    <option value="Mp3 Music">Mp3 Music</option>
+                    <option value="Music">Music</option>
+                    <option value="Musical Instruments">Musical Instruments</option>
+                    <option value="Office Products">Office Products</option>
+                    <option value="Pet Supplies">Pet Supplies</option>
+                    <option value="Prime Video">Prime Video</option>
+                    <option value="Shoes & Handbags">Shoes & Handbags</option>
+                    <option value="Software">Software</option>
+                    <option value="Sports, Fitness & Outdoors">Sports, Fitness & Outdoors</option>
+                    <option value="Subscribe & Save">Subscribe & Save</option>
+                    <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+                    <option value="Toys & Games">Toys & Games</option>
+                    <option value="Under ₹500">Under ₹500</option>
+                    <option value="Video Games">Video Games</option>
+                    <option value="Watches">Watches</option>
+                </Select>
+                <input type="text" placeholder="Search Amazon.in" id="input">
+                <button><i class='bx  bx-search' onclick="location.reload()"></i></button>
+            </div>
+            <div class="four">
+                <div class="bord fit">
+                    <img src="assets/india.jpg" alt="india">
+                    <p><b>EN</b></p>
+                </div>
+                <i class='bx  bx-caret-down'></i>
+            </div>
+            <div class="five">
+                <div class="bord">
+                    <p>Hello, sign in</p>
+                    <p>Accounts & Lists</p>
+                </div>
+                <i class='bx  bx-caret-down'></i>
+            </div>
+            <div class="bord six">
+                <p>Returns</p>
+                <p>& Orders</p>
+            </div>
+            <div class="bord seven">
+                <p id="zero"><b>0</b></p>
+                <i class='bx  bx-cart'></i>
+                <p><b>Cart</b></p>
+            </div>
+        </nav>
+
+        <nav class="nav2">
+            <div class="one">
+                <i class="fa-solid fa-bars"></i>
+                <span><b>All</b></span>
+            </div>
+            <div class="two">
+                <p>Fresh</p>
+                <i class='bx  bx-caret-down'></i>
+            </div>
+            <p>MX Player</p>
+            <p>Sell</p>
+            <p>Bestsellers</p>
+            <p>Today's Deals</p>
+            <p>Mobiles</p>
+            <div class="two eight">
+                <p>Prime</p>
+                <i class='bx  bx-caret-down'></i>
+            </div>
+            <p>Customer Service</p>
+            <p>Fashion</p>
+            <p>New Releases</p>
+            <p>Home & Kitchen</p>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carousel">
+            <div class="slides">
+                <img src="assets/one.jpg" alt="one" class="slide">
+                <img src="assets/two.jpg" alt="two" class="slide">
+                <img src="assets/three.jpg" alt="three" class="slide">
+                <img src="assets/four.jpg" alt="four" class="slide">
+                <img src="assets/five.jpg" alt="five" class="slide">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="actual-body">
+            <div class="grid">
+                <div class="grid-all">
+                    <h3>Revamp your home in style</h3>
+                    <div id="inside">
+                        <div>
+                            <img src="assets/grid1-1.png" alt="" class="grid-img">
+                            <p>Cushion covers, bedsheets & more</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid1-2.png" alt="" class="grid-img">
+                            <p>Figuriness, vases or more</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid1-3.png" alt="" class="grid-img">
+                            <p>Home storage</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid1-4.png" alt="" class="grid-img">
+                            <p>Lighting solutions</p>
+                        </div>
+                    </div>
+                    <span>Explore all</span>
+                </div>
+                <div class="grid-all">
+                    <h3>Appliances for your home | Up to 55% off</h3>
+                    <div id="inside">
+                        <div>
+                            <img src="assets/grid2-1.png" alt="" class="grid2-img">
+                            <p>Air conditioners</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid2-2.png" alt="" class="grid2-img">
+                            <p>Refrigerators</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid2-3.png" alt="" class="grid2-img">
+                            <p>Microwaves</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid2-4.png" alt="" class="grid2-img">
+                            <p>Washing machines</p>
+                        </div>
+                    </div>
+                    <span>See more</span>
+                </div>
+                <div class="grid-all">
+                    <h3>Starting ₹149 | Headphones</h3>
+                    <div id="inside">
+                        <div>
+                            <img src="assets/grid3-1.png" alt="" class="grid3-img">
+                            <p>Starting ₹249 | boAt</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid3-2.png" alt="" class="grid3-img">
+                            <p>Starting ₹349 | boult</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid3-3.png" alt="" class="grid3-img">
+                            <p>Starting ₹649 | Noise</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid3-4.png" alt="" class="grid3-img">
+                            <p>Starting ₹149 | Zebronics</p>
+                        </div>
+                    </div>
+                    <span>See all offers</span>
+                </div>
+                <div class="grid-all">
+                    <h3>Under ₹499 | Deals on home improvement essentials</h3>
+                    <div id="inside">
+                        <div>
+                            <img src="assets/grid4-1.png" alt="" class="grid4-img">
+                            <p>Under ₹199 | Cleaning supplies</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid4-2.png" alt="" class="grid4-img">
+                            <p>Under ₹399 | Bathroom accessories</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid4-3.png" alt="" class="grid4-img">
+                            <p>Under ₹499 | Home tools</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid4-4.png" alt="" class="grid4-img">
+                            <p>Under ₹299 | Wallpapers</p>
+                        </div>
+                    </div>
+                    <span>Explore all</span>
+                </div>
+                <div class="grid-all">
+                    <h3>Get your desired TV screen size | Starting ₹6,999</h3>
+                    <div id="inside">
+                        <div>
+                            <img src="assets/grid5-1.png" alt="" class="grid5-img">
+                            <p>Budget TVs | Save extra with No Cost EMI</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid5-2.png" alt="" class="grid5-img">
+                            <p>4K TVs | Up to 24 months No Cost EMI</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid5-3.png" alt="" class="grid5-img">
+                            <p>Big Screens | Free installation</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid5-4.png" alt="" class="grid5-img">
+                            <p>Ultra Premium TVs | Up to 50% off</p>
+                        </div>
+                    </div>
+                    <span>See all</span>
+                </div>
+                <div class="unique-grid">
+                    <div style="text-align: center;">
+                        <img src="assets/grid6.png" alt="">
+                        <p class="sponsore">Sponsored <i class='bx  bxs-info-circle'></i> </p>
+                    </div>
+                    <div
+                        style="background-color: white; width: 100%;height: 26.75vh; margin-top: 0.25rem;padding: 1rem;">
+                        <h2>Sign in for your bext Experience</h2>
+                        <button>Sign in securely</button>
+                    </div>
+                </div>
+                <div class="grid-all">
+                    <h3>Automotive essentials | Up to <br> 60% off</h3>
+                    <div id="inside">
+                        <div>
+                            <img src="assets/grid7-1.png" alt="" class="grid2-img">
+                            <p>Cleaning accessories</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid7-2.png" alt="" class="grid2-img">
+                            <p>Tyre & rim care</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid7-3.png" alt="" class="grid2-img">
+                            <p>Helmets</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid7-4.png" alt="" class="grid2-img">
+                            <p>Vacuum cleaner</p>
+                        </div>
+                    </div>
+                    <span>See more</span>
+                </div>
+                <div class="grid-all">
+                    <h3>Starting ₹199 | Amazon Brands & more</h3>
+                    <div id="inside">
+                        <div>
+                            <img src="assets/grid8-1.png" alt="" class="grid4-img">
+                            <p>Starting ₹199 | Bedsheets</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid8-2.png" alt="" class="grid4-img">
+                            <p>Starting ₹199 | Curtains</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid8-3.png" alt="" class="grid4-img">
+                            <p>Minimum 40% off | Ironing board & more</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid8-4.png" alt="" class="grid4-img">
+                            <p>Up to 60% off | Home decor</p>
+                        </div>
+                    </div>
+                    <span>See more</span>
+                </div>
+                <div class="grid-all">
+                    <h3>Up to 50% off | Baby care & toys | Amazon Brands</h3>
+                    <div id="inside">
+                        <div>
+                            <img src="assets/grid9-1.png" alt="" class="grid5-img">
+                            <p>Up to 50% off | Baby diapers & wipes</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid9-2.png" alt="" class="grid5-img">
+                            <p>Up to 50% off | Ride ons</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid9-3.png" alt="" class="grid5-img">
+                            <p>Starting ₹649 | RC cars</p>
+                        </div>
+                        <div>
+                            <img src="assets/grid9-4.png" alt="" class="grid5-img">
+                            <p>Up to 50% off | Baby <br> safety essentials</p>
+                        </div>
+                    </div>
+                    <span>See all offers</span>
+                </div>
+            </div>
+            <div class="carousel-2">
+                <div>
+                    <h3>Related to items you've viewed</h3>
+                    <span>See more</span>
+                </div>
+                <div class="carousel-2-box">
+                    <div class="carousel-2-button">
+                        <button class="prev-2">&#10094;</button>
+                        <button class="next-2">&#10095;</button>
+                    </div>
+                    <div class="carousel-2-slider">
+                    </div>
+                    <div class="carousel-2-scrollbar">
+                        <div class="carousel-2-scrollbar-thumb"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-3">
+                <div>
+                    <h3>More items to consider</h3>
+                    <span>See more</span>
+                </div>
+                <div class="carousel-3-box">
+                    <div class="carousel-3-button">
+                        <button class="prev-3">&#10094;</button>
+                        <button class="next-3">&#10095;</button>
+                    </div>
+                    <div class="carousel-3-slider">
+                    </div>
+                    <div class="carousel-3-scrollbar">
+                        <div class="carousel-3-scrollbar-thumb"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-for">
+                <div class="grid-for-1">
+                    <h2>Customers’ Most-Loved Fashion for you</h2>
+                    <div>
+                        <img src="assets/grid10/img-1.png" alt="" width="100%">
+                        <img src="assets/grid10/img-2.png" alt="" width="100%">
+                        <img src="assets/grid10/img-3.png" alt="" width="45%" style="margin: auto;">
+                        <img src="assets/grid10/img-4.png" alt="" width="100%">
+                    </div>
+                    <span>Explore more</span>
+                </div>
+                <div class="grid-for-2">
+                    <h2>Keep shopping for</h2>
+                    <div>
+                        <img src="assets/grid11/img-1.png" alt="" width="100%">
+                        <img src="assets/grid11/img-2.png" alt="" width="88%">
+                        <img src="assets/grid11/img-3.png" alt="" width="88%">
+                        <img src="assets/grid11/img-4.png" alt="" width="100%">
+                    </div>
+                    <span>See more</span>
+                </div>
+                <div class="grid-for-3">
+                    <h2>Continue shopping for</h2>
+                    <div class="grid-for-3-inside">
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid12/img-1.png" alt="" width="62%">
+                            <p>Nxilo Large Dish Dryin… <br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">399</span><sup>00</sup></p>
+                        </div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid12/img-2.png" alt="" width="55%">
+                            <p>Kewix 4 MM Large Dis… <br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">269</span><sup>00</sup></p>
+                        </div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid12/img-3.png" alt="" width="30%">
+                            <p>MAYNOS Suction Phon… <sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">99</span><sup>00</sup></p>
+                        </div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid12/img-4.png" alt="" width="60%">
+                            <p>Ambdded® Water Abso… <sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">210</span><sup>00</sup></p>
+                        </div>
+                    </div>
+                    <span>See more</span>
+                </div>
+            </div>
+            <div class="carousel-4">
+                <div>
+                    <h3>Starting ₹499 | Level up your playtime</h3>
+                    <span>See all offers</span>
+                </div>
+                <div class="carousel-4-box">
+                    <div class="carousel-4-button">
+                        <button class="prev-4">&#10094;</button>
+                        <button class="next-4">&#10095;</button>
+                    </div>
+                    <div class="carousel-4-slider">
+                    </div>
+                    <div class="carousel-4-scrollbar">
+                        <div class="carousel-4-scrollbar-thumb"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-5">
+                <div>
+                    <h3>Starting ₹70,348 | Set off on your next great ride</h3>
+                    <span>See all offers</span>
+                </div>
+                <div class="carousel-5-box">
+                    <div class="carousel-5-button">
+                        <button class="prev-5">&#10094;</button>
+                        <button class="next-5">&#10095;</button>
+                    </div>
+                    <div class="carousel-5-slider">
+                    </div>
+                    <div class="carousel-5-scrollbar">
+                        <div class="carousel-5-scrollbar-thumb"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ad-box">
+                <img src="assets/ad.png" alt="">
+                <div>
+                    <p>Large Kitchen Water Absorbent Mat for Dish Drying...</p>
+                    <p style="font-size: 1.75rem;"><i class='bx  bxs-star' style="color: rgb(232, 182, 47);"></i><i
+                            class='bx  bxs-star' style="color: rgb(232, 182, 47);"></i><i class='bx  bxs-star'
+                            style="color: rgb(232, 182, 47);"></i><i class='bx  bxs-star'
+                            style="color: rgb(232, 182, 47);"></i><i class='bx  bx-star'
+                            style="color: rgb(232, 182, 47);"></i> </p>
+                    <span style="font-size: 0.75rem;padding: 0.25rem;background-color: rgb(76, 228, 76);">Save
+                        3%</span>
+                    <span style="font-size: 0.75rem;">with coupon</span>
+                    <p style="position: relative;margin: 0.5rem 0;"><sup>₹</sup><span
+                            style="font-size: 1.4rem;color: black;">195</span><sup>00 <span
+                                style="font-size: 0.9rem;text-decoration: line-through;">₹899.00</span> <img
+                                src="assets/tik_prime.png" alt=""
+                                style="width: 4.25rem;position: absolute;margin-top: -1.3rem;padding-left: 0.25rem;">
+                    </p>
+                    <button>Shop now</button>
+                </div>
+            </div>
+            <div>
+                <p class="sponsore1">Sponsored <i class='bx  bxs-info-circle'></i> </p>
+            </div>
+
+            <div class="grid-by">
+                <div class="grid-by-1">
+                    <h3>Keep shopping for</h3>
+                    <div class="grid-by-1-inside">
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid13/img-1.png" alt="" width="70%">
+                            <p>Desi BAE Kitchen Uten…<br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">147</span><sup>25</sup></p>
+                        </div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid13/img-2.png" alt="" width="70%">
+                            <p>JAHAN Dish Drying ma… <br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">199</span><sup>00</sup></p>
+                        </div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid13/img-3.png" alt="" width="70%">
+                            <p>Primeway® Microfibre… <br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">199</span><sup>00</sup></p>
+                        </div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid13/img-4.png" alt="" width="70%">
+                            <p>Hian Quick-Dry Absorb… <br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">399</span><sup>00</sup></p>
+                        </div>
+                    </div>
+                    <span>See more</span>
+                </div>
+                <div class="grid-by-2">
+                    <h3 style="font-size: 1.35rem;">Customers’ Most-Loved products</h3>
+                    <div>
+                        <img src="assets/grid14/img-1.png" alt="" width="42%"">
+                            <img src=" assets/grid14/img-2.png" alt="" width="88%">
+                        <img src="assets/grid14/img-3.png" alt="" width="98%">
+                        <img src="assets/grid14/img-4.png" alt="" width="90%">
+                    </div>
+                    <span>Explore more</span>
+                </div>
+                <div class="grid-by-3">
+                    <h3>Pick up where you left off</h3>
+                    <div class="grid-by-3-inside">
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid15/img-1.png" alt="" width="60%">
+                            <p>JIALTO 1 Pcs Travel So…<br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">169</span><sup>00</sup></p>
+                        </div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid15/img-2.png" alt="" width="60%">
+                            <p>Leawall Portable Soap…<br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">199</span><sup>00</sup></p>
+                        </div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid15/img-3.png" alt="" width="60%">
+
+                            <p>Boniry Plastic 1 Pcs Tra…<br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">169</span><sup>00</sup></p>
+                        </div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;">
+                            <img src="assets/grid15/img-4.png" alt="" width="20.5%">
+                            <p>Clazkit Plastic Portable…<br><sup>₹</sup><span
+                                    style="font-size: 1.4rem;color: black;">99</span><sup>00</sup></p>
+                        </div>
+                    </div>
+                    <span>See more</span>
+                </div>
+            </div>
+
+            <div class="carousel-6">
+                <div>
+                    <h3>Min. 50% off | Unique home finds | Amazon Brands & more</h3>
+                    <span>See all</span>
+                </div>
+                <div class="carousel-6-box">
+                    <div class="carousel-6-button">
+                        <button class="prev-6">&#10094;</button>
+                        <button class="next-6">&#10095;</button>
+                    </div>
+                    <div class="carousel-6-slider">
+                    </div>
+                    <div class="carousel-6-scrollbar">
+                        <div class="carousel-6-scrollbar-thumb"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-carousel">
+                <div class="grid-carousel-1">
+                    <h3>Up to 60% off | Curated <br>kitchen products | Amazon L…</h3>
+                    <div class="carousel-in-grid">
+                        <img src="assets/gridCarousel1/img-1.png" alt="" style="margin-left: 6vw;margin-right: 8.5vw;">
+                        <img src="assets/gridCarousel1/img-2.png" alt="">
+                        <img src="assets/gridCarousel1/img-3.png" alt="">
+                        <img src="assets/gridCarousel1/img-4.png" alt="">
+                        <img src="assets/gridCarousel1/img-5.png" alt="">
+                        <img src="assets/gridCarousel1/img-6.png" alt="">
+                    </div>
+                    <div class="carousel-in-grid-1-button">
+                        <button class="prev-cg1">&#10094;</button>
+                        <button class="next-cg1">&#10095;</button>
+                    </div>
+                    <p>Aquaminder Smart Water Bottle Glows & Beeps to Remind You to Drink More 770 ml…</p>
+                    <span><sup>₹</sup><span style="font-size: 1.45rem;">1,195</span><sup>00</sup><span
+                            style="color: rgb(87, 87, 87);font-size: 0.85rem;margin-left: 0.5rem;">M.R.P: <span
+                                style="text-decoration: line-through;">₹1,999.00</span></span></span>
+                </div>
+                <div class="grid-carousel-2">
+                    <h3>Min.30% off | Top selections from Small Businesses</h3>
+                    <div class="carousel-in-grid2">
+                        <img src="assets/gridCarousel2/img-1.png" alt="" style="margin:0 8vw;">
+                        <img src="assets/gridCarousel2/img-2.png" alt="">
+                        <img src="assets/gridCarousel2/img-3.png" alt="">
+                        <img src="assets/gridCarousel2/img-4.png" alt="">
+                        <img src="assets/gridCarousel2/img-5.png" alt="">
+                    </div>
+                    <div class="carousel-in-grid-2-button">
+                        <button class="prev-cg2">&#10094;</button>
+                        <button class="next-cg2">&#10095;</button>
+                    </div>
+                    <p>COZYARDS Orthopedic Back Support for Office Chairs and Car Seat, Memory Foam B…</p>
+                    <span><sup>₹</sup><span style="font-size: 1.45rem;">999</span><sup>00</sup><span
+                            style="color: rgb(87, 87, 87);font-size: 0.85rem;margin-left: 0.5rem;">M.R.P: <span
+                                style="text-decoration: line-through;">₹2,499.00</span></span></span>
+                </div>
+                <div class="grid-carousel-3">
+                    <h3>Min. 40% off | Home & kitchen deals from Amazon Launchpad</h3>
+                    <div class="carousel-in-grid3">
+                        <img src="assets/gridCarousel3/img-1.png" alt="" style="margin-left: 9.5vw;margin-right: 11vw;">
+                        <img src="assets/gridCarousel3/img-2.png" alt="" style="margin-left: 7vw;margin-right: 10vw;">
+                        <img src="assets/gridCarousel3/img-3.png" alt="" style="margin-left: 3vw;margin-right: 8vw;">
+                        <img src="assets/gridCarousel3/img-4.png" alt="" style="margin-left: 3.5vw;margin-right: 7vw;">
+                        <img src="assets/gridCarousel3/img-5.png" alt="" style="margin-left: 4vw;margin-right: 7.5vw;">
+                        <img src="assets/gridCarousel3/img-6.png" alt="" style="margin-left: 4vw;margin-right: 7vw;">
+                    </div>
+                    <div class="carousel-in-grid-3-button">
+                        <button class="prev-cg3">&#10094;</button>
+                        <button class="next-cg3">&#10095;</button>
+                    </div>
+                    <p>MAYNOS Suction Phone Case Mount (Midnight Mystery（Black）)</p>
+                    <span><sup>₹</sup><span style="font-size: 1.45rem;">99</span><sup>00</sup><span
+                            style="color: rgb(87, 87, 87);font-size: 0.85rem;margin-left: 0.5rem;">M.R.P: <span
+                                style="text-decoration: line-through;">₹599.00</span></span></span>
+                </div>
+            </div>
+            <div class="last-carousel">
+                <hr style="color: rgba(90, 89, 89, 0.348);">
+                <div style="display: flex;justify-content: space-between;margin-top: 1rem;">
+                    <div style="display: flex;gap: 0.5rem;align-items: end;">
+                        <h3 style="font-weight: 500;margin-bottom: -0.1rem;">Related to items you've viewed</h3>
+                        <span id="see-more" style="font-size: 0.9rem;color: rgb(2, 97, 164);">See more</span>
+                    </div>
+                    <div style="display: flex;gap: 1rem;">
+                        <p id="page-no" style="font-size: 0.9rem;">Page 1 of 9</p>
+                        <p id="start-over" style="font-size: 0.9rem;color: rgb(2, 97, 164);">Start over</p>
+                    </div>
+                </div>
+                <div class="last-carousel-container">
+                    <button class="prev-lc">&#10094;</button>
+                    <div class="last-carousel-slide">
+                        <div class="sliding-page">
+                            <div class="grid-content">
+                                <div>
+                                    <img src="assets/lastCarousel/img-1.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Nivia Men Marathon Running Shoe for Mens | Rubber Outsole with Breathable Mesh
+                                        Upper with PVC Synthetic...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">1,215</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">999.00</span>
+                                        <br><span style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-2.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Reebok Men's Running Shoes - Stride Runner - Lightweight Training Shoes for Gym,
+                                        Running and Fitness
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">4,936</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,499.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-3.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Campus Men North Plus Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">15,255</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">999.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-4.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Campus Men First Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">14,927</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">999.00</span>-
+                                        <sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,086.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-5.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        SPARX Mens Sm 648 Running Shoe
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">5,912</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">845.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-page">
+                            <div class="grid-content">
+                                <div>
+                                    <img src="assets/lastCarousel/img-6.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        JQR Men's Max Sports, Running,Walking, Training Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">623</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">999.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-7.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Bersache Sports Shoes for Men |Latest Stylish Sports Shoes for Men |Lace-Up
+                                        Lightweight White Shoes for Running, Walking, Gym, Trekking...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star-half'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">1,256</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">799.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-8.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Impakto Barefoot Rooted Comfortable Big Toe Box Gym, Cross Training,
+                                        Running,Walking Shoes for Men
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">455</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">995.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-9.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        ASSIAN Men DOMINATOR-03 Running and Casual wear Running Shoes with Laces,
+                                        Lightweight and Comfortable Shoes with Upper Fabric and Phylo...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">439</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,074.00
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-10.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Campus Men City-Ride Sneakers
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star-half'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">3,665</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,099.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-page">
+                            <div class="grid-content">
+                                <div>
+                                    <img src="assets/lastCarousel/img-11.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Nivia Offroad Running Shoes for Men | Built for Endurance and Comfort on Every
+                                        Run | The Go-...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star-half'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">5</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">15%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p style="margin-top: 0.25rem;"><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,699.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹1,999.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-12.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Sparx Men Mesh Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">12,161</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">25%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">822.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹1,099.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-13.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Nivia Breeze Training Shoes for Men, Lightweight Lace‑Up Knit Upper, Duo‑Foam...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">42</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">28%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Sale
+                                        price Live</span>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.45rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,699.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹2,349.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Saturday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 20</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span><br>
+                                        <span style="font-size: 0.75rem;">only 5 left in stock.</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-14.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Nivia Hawks 2.0 Running Shoes for Men, Lightweight Breathable Mesh Upper,
+                                        Duofoam Cushioning, Flexible Rubber Outsole for...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star-half'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">380</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,399.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-15.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Puma Mens Dazzler Sneaker
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">7,983</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,599.00</span>-
+                                        <sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,749.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-page">
+                            <div class="grid-content">
+                                <div>
+                                    <img src="assets/lastCarousel/img-16.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Campus Men Everest Sneakers
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">2,581</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">998.00</span>-
+                                        <sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">999.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-17.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        LANCER Mens Indus-251 Running Shoe
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star-half'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">5,252</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">55%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p style="margin-top: 0.25rem;"><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">565.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹1,249.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-18.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Nivia Endeavour 2.0 Running Shoes for Men
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">37</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,479.00</span>
+                                        <br><span style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span><br>
+                                        <span style="font-size: 0.75rem;">only 1 left in stock</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-19.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Power Men's LIONEL E Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">65</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">29%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">926.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹1,299.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-20.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Campus Men Hurricane Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">5,816</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">883.00</span><br><span
+                                            style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹1,299.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span><br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-page">
+                            <div class="grid-content">
+                                <div>
+                                    <img src="assets/lastCarousel/img-21.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Nivia Yorks Running Shoes for Men
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">45</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">16%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p style="margin-top: 0.25rem;"><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,665.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹1,249.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span><br>
+                                        <span style="font-size: 0.75rem;">only 3 left in stock</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-22.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        ASIAN Men NITROEDGE-01 Running and Gym wear Running Shoes with Laces
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">1,192</span>
+                                    </p>
+                                    <p style="margin-top: 0.25rem;"><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,399.00</span>
+                                        <br><span style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-23.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Nivia Snake 2.0 Running Shoes for Men
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">197</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,529.00</span>
+                                        <br><span style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-24.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Reebok Men's Running Shoes - Ree Fusion - Lightweight Training Shoes for Gym,
+                                        Running
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">185</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">41%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,659.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹2,799.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Friday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 19</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-25.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Campus Men Tormentor Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">1,984</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,249.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-page">
+                            <div class="grid-content">
+                                <div>
+                                    <img src="assets/lastCarousel/img-26.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Nivia TFT Running Shoes, Soft Cushion Insole, Better Cushioning, Lightweight and
+                                        Durable/All-Around Support, for Men, Spor...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star-half'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">3</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,076.00</span>-
+                                        <sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">2,239.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-27.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        ASIAN Men's BLADE-13 Sports Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">1,643</span>
+                                    </p>
+                                    <p style="margin-top: 0.25rem;"><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">853.00</span>
+                                        <br><span style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-28.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        BoldFit Running Shoes for Man Anti Slip Sports Shoes Breathable Men Shoes Soft
+                                        Sole Gym Shoes for Men Workout Lightweight Walking...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">352</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,299.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-29.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Reebok Men's Sports Shoe - Flow Advance - Gym Shoe - Ideal for Gym & Running
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">238</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,259.00</span><br>
+                                        <span style="font-size: 0.75rem;">Get it by <b>Friday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 19</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-30.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Nivia Astro Training Shoe, Running Shoe, Breathable Knitted Upper with Fusion
+                                        Technology, High-Grip
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star-half'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">2</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,879.00</span><br>
+                                        <span style="font-size: 0.75rem;">(₹939.50/count)</span> <br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Friday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 19</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-page">
+                            <div class="grid-content">
+                                <div>
+                                    <img src="assets/lastCarousel/img-31.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Reebok Men's Sports Shoe - Flow Advance - Gym Shoe - Ideal for Gym & Running
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">238</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,299.00</span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Friday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 19</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-32.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        SPARX Men Lace Up Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">5,082</span>
+                                    </p>
+                                    <p style="margin-top: 0.25rem;"><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">853.00</span>
+                                        <br><span style="font-size: 0.75rem;">Get it by <b>Friday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 19</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-33.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        DOCTOR EXTRA SOFT Memory Foam Mens Running Shoe with EVA Sole |
+                                        Sports,Gym,Training,W...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">430</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,399.00</span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 24</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-34.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Campus Men Wells Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">3,083</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">17%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">746.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹899.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Saturday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 20</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-35.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        ASIAN Men's Everest-01 Sports Trekking & Hiking,Walking Shoes with Rubber
+                                        Outsole &...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">2,596</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">45%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,099.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹1,999.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Saturday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 20</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-page">
+                            <div class="grid-content">
+                                <div>
+                                    <img src="assets/lastCarousel/img-36.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Campus Men Terminator (N) Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">5,401</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">52%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,103.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹2,299.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Saturday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 20</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-37.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        AVANT Men's SpartanX Running Shoes - Superior Cushioning, Enhanced Grip TPR
+                                        Outsole,...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">562</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">39%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">908.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹1,499.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Saturday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 20</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-38.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Bacca Bucci Men Lace Up Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">3,417</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,499.00</span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Wednesday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 17</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-39.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Campus Men Abacus Running Shoes
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">2,416</span>
+                                    </p>
+                                    <span
+                                        style="font-size: 0.75rem;background-color: red;color: white;padding: 0.3rem;margin-right: 0.3rem;">46%
+                                        off</span><span style="color: red;font-size: 0.85rem;font-weight: 500;">Limited
+                                        time deal</span>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,249.00</span>
+                                        <br><span style="font-size: 0.75rem;">M.R.P <span
+                                                style="text-decoration: line-through;">₹2,299.00</span></span><br><span
+                                            style="font-size: 0.75rem;">Get it by <b>Thursday</b>,</span>
+                                        <br><span style="font-size: 0.75rem;"><b>September 18</b></span> <br><span
+                                            style="font-size: 0.75rem;">FREE Delivery by Amazon</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-40.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        BoldFit Running Shoes for Men - Anti-Slip Sports Shoes With Soft Sole Extra Grip
+                                        for Running, Jogging, Regular Gym - Black-Grey UK 6
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">397</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,304.13</span>-
+                                        <sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-bottom: 0.25rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,499.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-page">
+                            <div class="grid-content">
+                                <div>
+                                    <img src="assets/lastCarousel/img-41.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Boldfit Shoes for Man Stylish Running Shoes for Man Soft Cushion Lace Up Shoe
+                                        for Men Stylish Regular Wear Walking Footwear Light Weight...
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star-half'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">99</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,399.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="assets/lastCarousel/img-42.png" alt="" width="100%">
+                                    <p style="color: rgb(2, 97, 164);font-size: 0.9rem;">
+                                        Reebok Men's Sports Shoe - Advent TR - Gym Shoe - Ideal for Gym & Running
+                                    </p>
+                                    <p style="font-size: 0.95rem;margin-top: 0.25rem;"><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bxs-star'
+                                            style="color: rgb(237, 156, 6);"></i><i class='bx  bx-star'
+                                            style="color: rgb(237, 156, 6);"></i> <span
+                                            style="font-size: 0.75rem;color: rgb(2, 97, 164);display: inline-block;transform: translateY(-0.2rem);">2633</span>
+                                    </p>
+                                    <p><sup style="font-size: 0.75rem;">₹</sup><span
+                                            style="margin-top: 0.35rem;display: inline-block;transform: translateY(-0.1rem);font-size: 1.15rem;">1,539.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="next-lc">&#10095;</button>
+                </div>
+            </div>
+            <div class="recommendations">
+                <h2>See Personalized Recommendations</h2>
+                <button id="sign-recom">Sign in</button>
+                <div>
+                    <span style="font-size: 0.75rem;">New Customer?</span>
+                    <span id="start-here">Start here</span>
+                </div>
+            </div>
+            <div style="height: 1rem;border-top: 1px solid rgba(90, 89, 89, 0.348);background-color: white;"></div>
+            <a href="#" style="text-decoration:none; display:block;">
+                <div id="back-to-top"
+                    style="text-align:center; padding:1rem 0; background-color:#2c3846; font-size:0.85rem; cursor:pointer; color:white;">
+                    Back to Top
+                </div>
+            </a>
+            <footer>
+                <div class="footer">
+                    <div>
+                        <h2>Get to know Us</h2>
+                        <p>About Amazon</p>
+                        <p>Careers</p>
+                        <p>Press Releases</p>
+                        <p>Amazon Science</p>
+                    </div>
+                    <div>
+                        <h2>Connect with Us</h2>
+                        <p>Facebook</p>
+                        <p>Twitter</p>
+                        <p>Instagram</p>
+                    </div>
+                    <div>
+                        <h2>Make Money with Us</h2>
+                        <p>Sell on Amazon</p>
+                        <p>Sell under Amazon Accelerator</p>
+                        <p>Protect and Build Your Brand</p>
+                        <p>Amazon Global Selling</p>
+                        <p>Supply to Amazon</p>
+                        <p>Become an Affiliate</p>
+                        <p>Fulfilment by Amazon</p>
+                        <p>Advertise Your Products</p>
+                        <p>Amazon Pay on Merchants</p>
+                    </div>
+                    <div>
+                        <h2>Let Us Help You</h2>
+                        <p>Your Account</p>
+                        <p>Returns Center</p>
+                        <p>Recalls and Product Safety Alerts</p>
+                        <p>100% Purchase Protection</p>
+                        <p>Amazon App Download</p>
+                        <p>Help</p>
+                    </div>
+                </div>
+                <div class="last-footer">
+                    <img src="assets/amazon-logo.png" alt="amazon logo" onclick="location.reload()" width="8%"
+                        style="transform: translateY(20%);">
+                    <div>
+                        <button id="global-language"><i class='bx  bx-globe-alt'></i> English <i
+                                class='bx  bx-carets-up-down' style="padding-left: 0.75rem;"></i>
+                            <div class="lang">
+                                <form action="" method="post">
+                                    <div>
+                                        <input type='radio' id='English' name='language' checked>
+                                        <label for="English">English - EN</label>
+                                    </div>
+                                    <div>
+                                        <input type='radio' id='Hindi' name='language'>
+                                        <label for="Hindi">हिन्दी - HI</label>
+                                    </div>
+                                    <div>
+                                        <input type='radio' id='Tamil' name='language'>
+                                        <label for="Tamil">தமிழ் - TA</label>
+                                    </div>
+                                    <div>
+                                        <input type='radio' id='Telugu' name='language'>
+                                        <label for="Telugu">తెలుగు - TE</label>
+                                    </div>
+                                    <div>
+                                        <input type='radio' id='Kannada' name='language'>
+                                        <label for="Kannada">ಕನ್ನಡ - KN</label>
+                                    </div>
+                                    <div>
+                                        <input type='radio' id='Malayalam' name='language'>
+                                        <label for="Malayalam">മലയാളം - ML</label>
+                                    </div>
+                                    <div>
+                                        <input type='radio' id='Bengali' name='language'>
+                                        <label for="Bengali">বাংলা - BN</label>
+                                    </div>
+                                    <div>
+                                        <input type='radio' id='Marathi' name='language'>
+                                        <label for="Marathi">मराठी - MR</label>
+                                    </div>
+                                </form>
+                                <p class="learn-more">Learn more</p>
+                            </div>
+                        </button>
+                        <button id="flag"> <img src="assets/india.jpg" alt="india" width="25"
+                                style="padding-right: 0.5rem;">India
+                        </button>
+                    </div>
+                </div>
+                <div class="end">
+                    <div class="end-top">
+                        <div><b>AbeBooks</b><br>
+                            Books, art <br>
+                            & collectibles</div>
+                        <div>
+                            <b>Amazon Web Services</b> <br>
+                            Scalable Cloud <br>
+                            Computing Services
+                        </div>
+                        <div>
+                            <b>Audible</b> <br>
+                            Download <br>
+                            Audio Books
+                        </div>
+                        <div>
+                            <b>IMDb</b> <br>
+                            Movies, TV <br>
+                            & Celebrities
+                        </div>
+                        <div>
+                            <b>Shopbop</b> <br>
+                            Designer <br>
+                            Fashion Brands
+                        </div>
+                        <div>
+                            <b>Amazon Business</b> <br>
+                            Everything For <br>
+                            Your Business
+                        </div>
+                        <div>
+                            <b> Prime Now </b> <br>
+                            2-Hour Delivery <br>
+                            on Everyday Items
+                        </div>
+                        <div>
+                            <b>Amazon Prime Music </b> <br>
+                            100 million songs, ad-free <br>
+                            Over 15 million podcast episodes
+                        </div>
+                    </div>
+                    <div class="end-bottom" style="text-align: center;font-size: 0.75rem;margin-top: 2rem;">
+                        <div style="display: flex;gap: 1rem;justify-content: center;"><span>Conditions of Use & Sale</span>  <span>Privacy Notice</span>  <span>Interest-Based Ads</span></div>
+                        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

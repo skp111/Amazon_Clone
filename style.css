@@ -1,0 +1,2376 @@
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amazon Ember', 'Arial', 'sans-serif';
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    top: 20vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.overlay2 {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+nav {
+    color: white;
+    width: 100%;
+}
+
+.nav1 {
+    background-color: #0F1111;
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bord {
+    height: 9vh;
+}
+
+.bord:hover {
+    border: 1px solid white;
+    padding: 0px 3px;
+    cursor: pointer;
+}
+
+.nav1 .one {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.nav1 .one img {
+    height: 6.90vh;
+}
+
+.nav1 .one p {
+    color: rgb(192, 191, 191);
+    transform: translateY(-0.9rem);
+    font-size: 0.85rem;
+}
+
+.nav1 .two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.nav1 .two i {
+    font-size: 1.25rem;
+    transform: translateY(0.40rem);
+    color: rgb(192, 191, 191);
+    font-weight: 500;
+}
+
+.nav1 .two div p:first-child {
+    color: rgb(192, 191, 191);
+    font-size: 0.75rem;
+}
+
+.nav1 .two div p:last-child {
+    font-weight: 800;
+}
+
+.address {
+    width: 35vw;
+    height: 50vh;
+    display: none;
+    position: fixed;
+    /* use fixed so it floats above everything */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* true centering */
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    z-index: 2;
+    /* higher than overlay */
+}
+
+.address-header {
+    background-color: rgb(241, 237, 237);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid rgb(38, 37, 37);
+}
+
+.address-header h4 {
+    margin-left: 2vw;
+}
+
+.address-header button {
+    margin-right: 0.5vw;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: block !important;
+}
+
+.address-header button:hover {
+    color: rgb(81, 79, 79);
+    cursor: pointer;
+}
+
+.address-body {
+    font-size: 0.80rem;
+    padding: 0.65rem 1.5rem;
+    color: rgb(81, 79, 79);
+}
+
+.address-body p {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.address-body #sign-in {
+    background-color: rgb(232, 182, 47);
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.90rem;
+    font-weight: 400;
+}
+
+.address-body #sign-in:hover {
+    background-color: rgb(232, 158, 29);
+    cursor: pointer;
+}
+
+.address-body #pincode {
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.address-body input {
+    width: 65%;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.address-body input:focus {
+    outline: 2px solid gray;
+}
+
+.address-body #apply {
+    width: 30%;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+}
+
+.address-body #apply:hover {
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+.nav1 .three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.75vh;
+    width: 35vw;
+    border-radius: 0.45rem;
+}
+
+.nav1 .three Select {
+    color: rgb(80, 77, 77);
+    background-color: rgb(230, 220, 220);
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+    width: 5vw;
+    min-width: 5vw;
+    max-width: 15vw;
+    padding: 1px;
+    border: none;
+    outline: none;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav1 .three Select:hover {
+    color: black;
+}
+
+.nav1 .three Select:focus {
+    color: black;
+    border: 3px solid rgb(207, 121, 71);
+}
+
+.nav1 .three Select option {
+    background-color: white;
+    text-align: start;
+}
+
+.nav1 .three input {
+    height: 100%;
+    padding: 1px;
+    padding-left: 5px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.nav1 .three button {
+    height: 100%;
+    flex: 0 0 4vw;
+    background-color: rgb(232, 182, 47);
+    color: rgb(33, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border: none;
+    outline: none;
+}
+
+.nav1 .three button:hover {
+    background-color: rgb(232, 158, 29);
+}
+
+.nav1 .four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-top: 0.7rem;
+}
+
+.fit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.nav1 .four img {
+    height: 3vh;
+}
+
+.nav1 .four i {
+    margin-top: 1.25vh;
+    color: rgb(192, 191, 191);
+}
+
+.language {
+    position: absolute;
+    z-index: 3;
+    width: 20vw;
+    border: 1px solid rgb(217, 215, 215);
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: none;
+    background-color: white;
+    transform: translateX(330%) translateY(16%);
+    color: rgb(81, 79, 79);
+}
+
+.language form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    accent-color: red;
+}
+
+.language form div:first-child {
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgb(217, 215, 215);
+}
+
+.language form div:hover {
+    color: red;
+    text-decoration: underline;
+    accent-color: red;
+}
+
+.learn-more {
+    color: rgb(2, 97, 164);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgb(217, 215, 215);
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+
+.shopping {
+    margin-top: 0.5rem;
+}
+
+.change-country {
+    padding: 0.75rem 0;
+    font-size: 0.8rem;
+    color: rgb(2, 97, 164);
+    margin-left: 1rem;
+}
+
+.nav1 .five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.nav1 .five .bord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav1 .five .bord p:first-child {
+    font-size: 0.75rem;
+}
+
+.nav1 .five .bord p:last-child {
+    font-weight: 800;
+}
+
+.nav1 .five i {
+    margin-top: 4.5vh;
+    color: rgb(192, 191, 191);
+}
+
+.account-list {
+    position: absolute;
+    z-index: 3;
+    width: 45vw;
+    height: 85vh;
+    border: 1px solid rgb(217, 215, 215);
+    padding: 1rem;
+    display: none;
+    transform: translateX(110%) translateY(13%);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.acc-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    border-bottom: 1px solid rgb(217, 215, 215);
+}
+
+.acc-header a {
+    color: rgb(2, 97, 164);
+}
+
+.acc-header button {
+    padding: 0.5rem 0;
+    width: 18vw;
+    border: none;
+    background-color: #f0c14b;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.acc-header p {
+    margin: 0.5rem 0;
+    font-size: 0.75rem;
+    color: rgb(81, 79, 79);
+}
+
+.acc-header button:hover {
+    text-decoration: underline;
+}
+
+.acc-header p a:hover {
+    color: red;
+}
+
+.acc-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    height: 68vh;
+    font-size: 0.9rem;
+}
+
+.your-list {
+    width: 55%;
+    border-right: 1px solid rgb(217, 215, 215);
+}
+
+.your-acc {
+    margin-left: 1.25rem;
+}
+
+.acc-body h4 {
+    margin-bottom: 0.5rem;
+}
+
+.acc-body p {
+    margin-bottom: 0.3rem;
+    color: rgb(81, 79, 79);
+    cursor: pointer;
+}
+
+.acc-body p:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.nav1 .six {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.nav1 .six p:first-child {
+    font-size: 0.75rem;
+}
+
+.nav1 .six p:last-child {
+    font-weight: 800;
+}
+
+.nav1 .seven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.nav1 .seven i {
+    font-size: 3.5vw;
+}
+
+#zero {
+    position: absolute;
+    transform: translateX(-125%);
+    color: rgb(207, 121, 71);
+}
+
+.nav1 .seven p:last-child {
+    margin-top: 2.75vh;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.nav2 {
+    background-color: #232F3E;
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    font-size: 0.90rem;
+    gap: 1.75vw;
+    color: rgb(255, 255, 255);
+}
+
+.nav2 .one {
+    margin-left: 1.75vw;
+    height: 8.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.nav2 .one i {
+    font-size: 1.2rem;
+}
+
+.offcanvas {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 33vw;
+    opacity: 1;
+    height: 100%;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform 0.5s linear;
+}
+
+.offcanvas p:first-child {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    background-color: #232F3E;
+    color: white;
+    height: 10vh;
+}
+
+.offcanvas p i {
+    font-size: 2rem;
+}
+
+.canvas-body {
+    overflow: scroll;
+    height: 90vh;
+    width: 100%;
+}
+
+.canvas-body div:first-child {
+    border-bottom: 1px solid rgb(217, 215, 215);
+}
+
+.canvas-body div:first-child h3 {
+    padding-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.canvas-body div:first-child p {
+    font-size: 0.9rem;
+    padding: 0.9rem 0 0.9rem 2rem;
+}
+
+.canvas-body div:first-child p:hover {
+    background-color: rgb(241, 237, 237);
+}
+
+.canvas-body div:nth-child(2) {
+    border-bottom: 1px solid rgb(217, 215, 215);
+}
+
+.canvas-body div:nth-child(2) h3 {
+    padding-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.canvas-body div:nth-child(2) p span {
+    font-size: 0.9rem;
+}
+
+.canvas-body div:nth-child(2) p i {
+    font-size: 0.75rem;
+    color: rgb(80, 77, 77);
+    padding-right: 2rem;
+}
+
+.canvas-body div:nth-child(2) p {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 0 0.9rem 2rem;
+}
+
+.canvas-body div:nth-child(2) p:hover {
+    background-color: rgb(241, 237, 237);
+}
+
+.canvas-body div:nth-child(2) p:hover i {
+    color: black;
+}
+
+.canvas-body div:nth-child(3) {
+    border-bottom: 1px solid rgb(217, 215, 215);
+}
+
+.canvas-body div:nth-child(3) h3 {
+    padding-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.canvas-body div:nth-child(3) p span {
+    font-size: 0.9rem;
+}
+
+.canvas-body div:nth-child(3) p i {
+    font-size: 0.75rem;
+    color: rgb(80, 77, 77);
+    padding-right: 2rem;
+}
+
+.canvas-body div:nth-child(3) p {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 0 0.9rem 2rem;
+    background-color: white;
+    color: black;
+    font-weight: 400;
+}
+
+.canvas-body div:nth-child(3) p:hover {
+    background-color: rgb(241, 237, 237);
+}
+
+.canvas-body div:nth-child(3) p:hover i {
+    color: black;
+}
+
+.see-shop i {
+    font-size: 1.75rem;
+    transform: translateY(-0.25rem);
+    margin-right: 65%;
+}
+
+.shop {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s linear, opacity 0.5s linear;
+}
+
+.shop.open {
+    max-height: 100vh;
+    opacity: 1;
+}
+
+.canvas-body div:nth-child(4) {
+    border-bottom: 1px solid rgb(217, 215, 215);
+}
+
+.canvas-body div:nth-child(4) h3 {
+    padding-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.canvas-body div:nth-child(4) p {
+    font-size: 0.9rem;
+    padding: 0.9rem 0 0.9rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    font-weight: 400;
+}
+
+.canvas-body div:nth-child(4) p i {
+    font-size: 0.75rem;
+    color: rgb(80, 77, 77);
+    padding-right: 2rem;
+}
+
+.canvas-body div:nth-child(4) p:hover {
+    background-color: rgb(241, 237, 237);
+}
+
+.canvas-body div:nth-child(4) p:hover i {
+    color: black;
+}
+
+.canvas-body div:nth-child(4) .see-program i {
+    font-size: 1.75rem;
+    transform: translateY(-0.25rem);
+    margin-right: 65%;
+}
+
+.program {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s linear, opacity 0.5s linear;
+}
+
+.program.open {
+    max-height: 100vh;
+    opacity: 1;
+}
+
+.canvas-body div:nth-child(5) h3 {
+    padding-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.canvas-body div:nth-child(5) p {
+    font-size: 0.9rem;
+    padding: 0.9rem 0 0.9rem 2rem;
+}
+
+.canvas-body div:nth-child(5) p:hover {
+    background-color: rgb(241, 237, 237);
+}
+
+.canvas-body div:nth-child(5) p:last-child {
+    margin-bottom: 1.5rem;
+}
+
+#close-offcanvas {
+    position: fixed;
+    top: 2vh;
+    z-index: 3;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1.75rem;
+    padding: 0 0.65rem;
+    cursor: pointer;
+    transform: translateX(-110%);
+    transition: transform 0.5s linear;
+}
+
+.nav2 .two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2vw;
+}
+
+.nav2 .two i {
+    color: rgb(192, 191, 191);
+}
+
+.fresh {
+    position: fixed;
+    z-index: 3;
+    top: 20vh;
+    left: 6.8vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0.75rem;
+    width: fit-content;
+    border: 1px solid rgb(217, 215, 215);
+    background-color: white;
+    display: none;
+}
+
+.fresh-img {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.fresh p {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: rgb(2, 97, 164)
+}
+
+.prime {
+    position: fixed;
+    z-index: 3;
+    top: 20vh;
+    right: 22vw;
+    width: 31vw;
+    text-align: center;
+    border: 1px solid rgb(217, 215, 215);
+    padding: 0.6rem 0.75rem;
+    background-color: white;
+    display: none;
+}
+
+.prime p {
+    margin-top: 0.4rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.85rem;
+}
+
+.prime img:last-child {
+    width: 7vw;
+    height: 4vh;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    margin-left: 22vw;
+}
+
+.prime button {
+    margin: 0.75rem 0 0.5rem 0;
+    background-color: rgb(232, 182, 47);
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 0.90rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.prime button:hover {
+    background-color: rgb(232, 158, 29);
+}
+
+.nav2 p {
+    height: 8.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 p:hover,
+.nav2 .one:hover {
+    border: 1px solid white;
+    padding: 0px 3px;
+    cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+.slides {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: fill;
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 22%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 4vw;
+    font-weight: 100;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.prev {
+    left: 3vw;
+}
+
+.next {
+    right: 3vw;
+}
+
+.actual-body {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 1;
+    top: 66vh;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 35vh, rgb(234, 231, 231) 35vh, rgb(234, 231, 231) 100%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.grid-all {
+    background-color: white;
+    height: 80vh;
+    padding: 1rem;
+}
+
+.grid-all span:hover {
+    cursor: pointer;
+    color: rgb(3, 50, 85);
+}
+
+#inside {
+    margin-top: 0.75rem;
+    margin-bottom: 1.30rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#inside div {
+    cursor: pointer;
+}
+
+#inside p {
+    font-size: 0.75rem;
+}
+
+.grid-img {
+    width: 13vw;
+    height: 10vw;
+    object-fit: fill;
+    aspect-ratio: 1/1;
+}
+
+.grid2-img {
+    width: 13vw;
+    height: 9.5vw;
+    object-fit: fill;
+    aspect-ratio: 1/1;
+}
+
+.grid3-img {
+    width: 13vw;
+    height: 10.5vw;
+    object-fit: fill;
+    aspect-ratio: 1/1;
+}
+
+.grid4-img {
+    width: 13vw;
+    height: 9vw;
+    object-fit: fill;
+    aspect-ratio: 1/1;
+}
+
+.grid5-img {
+    width: 13vw;
+    height: 8.25vw;
+    object-fit: fill;
+    aspect-ratio: 1/1;
+}
+
+.grid-all span {
+    font-size: 0.8rem;
+    color: rgb(2, 97, 164);
+}
+
+.unique-grid div:first-child p {
+    margin-left: 70%;
+    width: fit-content;
+    font-size: 0.75rem;
+    color: rgb(79, 77, 77);
+    cursor: pointer;
+}
+
+.unique-grid div:first-child p:hover,
+.unique-grid div:first-child p:hover i {
+    color: rgb(50, 50, 50);
+}
+
+.unique-grid div:first-child p i {
+    transform: translateY(0.1rem);
+    font-size: 0.85rem;
+    color: rgb(136, 133, 133);
+}
+
+.unique-grid button {
+    margin-top: 0.5rem;
+    background-color: rgb(232, 182, 47);
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 0.90rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.unique-grid button:hover {
+    background-color: rgb(232, 158, 29);
+}
+
+.spons-mid {
+    background-color: rgb(0, 0, 0, 0.6);
+    ;
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+}
+
+.sponsored {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40vw;
+    min-height: 120vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sponsored-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 242, 242);
+    border-bottom: 1px solid rgb(217, 215, 215);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 11vh;
+    padding-left: 1.5rem;
+}
+
+#close-sponsore {
+    border: 2px solid rgb(136, 133, 133);
+    padding: 0.7rem 1.05rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    margin-right: 0.25rem;
+    font-size: 1.25rem;
+}
+
+#close-sponsore:hover {
+    color: rgb(136, 133, 133);
+}
+
+.sponsore:active {
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.sponsored-body {
+    padding: 1.5rem;
+}
+
+.sponsored-body h4 {
+    margin-bottom: 0.75rem;
+}
+
+.sponsored-body form div {
+    line-height: 1.6rem;
+    font-size: 0.85rem;
+    padding-left: 0.5rem;
+}
+
+.sponsored-body form div label {
+    cursor: pointer;
+}
+
+.sponsored-body form div:hover input[type='checkbox'] {
+    accent-color: blue;
+    cursor: pointer;
+}
+
+#cancel-sponsore,
+#submit-sponsore {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid rgb(136, 133, 133);
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    margin-right: 0.25rem;
+    font-size: 0.85rem;
+}
+
+#cancel-sponsore:hover {
+    color: rgb(53, 52, 52);
+    background-color: rgb(244, 236, 236);
+}
+
+#submit-sponsore:enabled {
+    background-color: #facc15;
+    color: black;
+    cursor: pointer;
+}
+
+#submit-sponsore:disabled {
+    background-color: rgb(225, 209, 163);
+    color: #666;
+    cursor: not-allowed;
+}
+
+#message-sponsore:focus {
+    outline: 2px solid rgb(136, 133, 133);
+    outline-offset: 0.1rem;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+}
+
+.carousel-2 {
+    margin: 1rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    height: 55vh;
+    position: relative;
+}
+
+.carousel-2 div:first-child {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.carousel-2 div:first-child span {
+    font-size: 0.85rem;
+    color: rgb(2, 97, 164);
+    margin-top: 0.3rem;
+}
+
+.carousel-2 div:first-child span:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.carousel-2-box {
+    overflow: hidden;
+}
+
+.carousel-2-slider {
+    display: flex;
+    gap: 0.5rem;
+    transition: transform 0.5s ease;
+    /* transition effect */
+}
+
+.carousel-2-slider img {
+    width: 20vw;
+    height: 18vw;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.prev-2,
+.next-2 {
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    padding: 1.5rem 1rem;
+    border: 1px solid rgb(136, 133, 133);
+    background-color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: rgb(90, 89, 89);
+    border-radius: 5px;
+}
+
+.prev-2 {
+    left: 0;
+    transform: translateX(30%);
+}
+
+.next-2 {
+    right: 0;
+    transform: translateX(-30%);
+}
+
+.prev-2:hover,
+.next-2:hover {
+    color: black;
+}
+
+.carousel-2-scrollbar {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.carousel-2-scrollbar-thumb {
+    height: 100%;
+    width: 20% !important;
+    /* since 5 pages → thumb is 1/5 of total */
+    background-color: rgb(136, 133, 133);
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+
+.prev-2,
+.next-2,
+.carousel-2-scrollbar {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-3 {
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+    background-color: white;
+    height: 55vh;
+    position: relative;
+}
+
+.carousel-3 div:first-child {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.carousel-3 div:first-child span {
+    font-size: 0.85rem;
+    color: rgb(2, 97, 164);
+    margin-top: 0.3rem;
+}
+
+.carousel-3 div:first-child span:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.carousel-3-box {
+    overflow: hidden;
+}
+
+.carousel-3-slider {
+    display: flex;
+    gap: 0.5rem;
+    transition: transform 0.5s ease;
+    /* transition effect */
+}
+
+.carousel-3-slider img {
+    width: 20vw;
+    height: 18vw;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.prev-3,
+.next-3 {
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    padding: 1.5rem 1rem;
+    border: 1px solid rgb(136, 133, 133);
+    background-color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: rgb(90, 89, 89);
+    border-radius: 5px;
+}
+
+.prev-3 {
+    left: 0;
+    transform: translateX(30%);
+}
+
+.next-3 {
+    right: 0;
+    transform: translateX(-30%);
+}
+
+.prev-3:hover,
+.next-3:hover {
+    color: black;
+}
+
+.carousel-3-scrollbar {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.carousel-3-scrollbar-thumb {
+    height: 100%;
+    width: 20% !important;
+    /* since 5 pages → thumb is 1/5 of total */
+    background-color: rgb(136, 133, 133);
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+
+.prev-3,
+.next-3,
+.carousel-3-scrollbar {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+
+.grid-for {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.grid-for-1 {
+    background-color: white;
+    padding: 1rem;
+    height: 75vh;
+}
+
+.grid-for .grid-for-1 div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid-for .grid-for-1 div img {
+    cursor: pointer;
+}
+
+.grid-for div span {
+    font-size: 0.85rem;
+    color: rgb(2, 97, 164);
+    margin-top: 0.5rem;
+}
+
+.grid-for span:hover {
+    cursor: pointer;
+    color: rgb(3, 50, 85);
+}
+
+.grid-for-2 {
+    background-color: white;
+    padding: 1rem;
+    height: 75vh;
+}
+
+
+.grid-for .grid-for-2 div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid-for .grid-for-2 div img {
+    cursor: pointer;
+    margin: auto;
+}
+
+.grid-for-3 {
+    background-color: white;
+    padding: 1rem;
+    height: 75vh;
+}
+
+
+.grid-for .grid-for-3 .grid-for-3-inside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.7rem;
+}
+
+.grid-for .grid-for-3 .grid-for-3-inside img {
+    cursor: pointer;
+    margin: auto;
+}
+
+.grid-for .grid-for-3 .grid-for-3-inside p {
+    font-size: 0.80rem;
+}
+
+.grid-for .grid-for-3 .grid-for-3-inside sup {
+    display: inline-block;
+    transform: translateY(-0.2rem);
+}
+
+.carousel-4 {
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+    background-color: white;
+    height: 55vh;
+    position: relative;
+}
+
+.carousel-4 div:first-child {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.carousel-4 div:first-child span {
+    font-size: 0.85rem;
+    color: rgb(2, 97, 164);
+    margin-top: 0.3rem;
+}
+
+.carousel-4 div:first-child span:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.carousel-4-box {
+    overflow: hidden;
+}
+
+.carousel-4-slider {
+    display: flex;
+    gap: 0.5rem;
+    transition: transform 0.5s ease;
+    /* transition effect */
+}
+
+.carousel-4-slider img {
+    width: 20vw;
+    height: 18vw;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.prev-4,
+.next-4 {
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    padding: 1.5rem 1rem;
+    border: 1px solid rgb(136, 133, 133);
+    background-color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: rgb(90, 89, 89);
+    border-radius: 5px;
+}
+
+.prev-4 {
+    left: 0;
+    transform: translateX(30%);
+}
+
+.next-4 {
+    right: 0;
+    transform: translateX(-30%);
+}
+
+.prev-4:hover,
+.next-4:hover {
+    color: black;
+}
+
+.carousel-4-scrollbar {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.carousel-4-scrollbar-thumb {
+    height: 100%;
+    width: 25% !important;
+    /* since 5 pages → thumb is 1/5 of total */
+    background-color: rgb(136, 133, 133);
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+
+.prev-4,
+.next-4,
+.carousel-4-scrollbar {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.carousel-5 {
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+    background-color: white;
+    height: 55vh;
+    position: relative;
+}
+
+.carousel-5 div:first-child {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.carousel-5 div:first-child span {
+    font-size: 0.85rem;
+    color: rgb(2, 97, 164);
+    margin-top: 0.3rem;
+}
+
+.carousel-5 div:first-child span:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.carousel-5-box {
+    overflow: hidden;
+}
+
+.carousel-5-slider {
+    display: flex;
+    gap: 0.5rem;
+    transition: transform 0.5s ease;
+    /* transition effect */
+}
+
+.carousel-5-slider img {
+    width: 22.5vw;
+    height: 18vw;
+    cursor: pointer;
+}
+
+.prev-5,
+.next-5 {
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    padding: 1.5rem 1rem;
+    border: 1px solid rgb(136, 133, 133);
+    background-color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: rgb(90, 89, 89);
+    border-radius: 5px;
+}
+
+.prev-5 {
+    left: 0;
+    transform: translateX(30%);
+}
+
+.next-5 {
+    right: 0;
+    transform: translateX(-30%);
+}
+
+.prev-5:hover,
+.next-5:hover {
+    color: black;
+}
+
+.carousel-5-scrollbar {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.carousel-5-scrollbar-thumb {
+    height: 100%;
+    width: 14.15% !important;
+    /* since 9 pages → thumb is 1/9 of total */
+    background-color: rgb(136, 133, 133);
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+
+.prev-5,
+.next-5,
+.carousel-5-scrollbar {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.ad-box {
+    display: flex;
+    width: 85%;
+    height: 47vh;
+    margin: 0 auto;
+}
+
+.ad-box div {
+    background-color: white;
+    padding: 0 2rem;
+    padding-top: 2.75rem;
+    width: 100%;
+    height: 100%;
+}
+
+.ad-box div button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(250, 184, 2);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.ad-box div button:hover {
+    background-color: rgb(241, 159, 8);
+}
+
+
+.spons-mid1 {
+    background-color: rgb(0, 0, 0, 0.6);
+    ;
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+}
+
+.sponsored1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40vw;
+    min-height: 120vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sponsored-header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 242, 242);
+    border-bottom: 1px solid rgb(217, 215, 215);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 11vh;
+    padding-left: 1.5rem;
+}
+
+#close-sponsore1 {
+    border: 2px solid rgb(136, 133, 133);
+    padding: 0.7rem 1.05rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    margin-right: 0.25rem;
+    font-size: 1.25rem;
+}
+
+#close-sponsore1:hover {
+    color: rgb(136, 133, 133);
+}
+
+.sponsore1:active {
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.sponsored-body1 {
+    padding: 1.5rem;
+}
+
+.sponsored-body1 h4 {
+    margin-bottom: 0.75rem;
+}
+
+.sponsored-body1 form div {
+    line-height: 1.6rem;
+    font-size: 0.85rem;
+    padding-left: 0.5rem;
+}
+
+.sponsored-body1 form div label {
+    cursor: pointer;
+}
+
+.sponsored-body1 form div:hover input[type='checkbox'] {
+    accent-color: blue;
+    cursor: pointer;
+}
+
+#cancel-sponsore1,
+#submit-sponsore1 {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid rgb(136, 133, 133);
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    margin-right: 0.25rem;
+    font-size: 0.85rem;
+}
+
+#cancel-sponsore1:hover {
+    color: rgb(53, 52, 52);
+    background-color: rgb(244, 236, 236);
+}
+
+#submit-sponsore1:enabled {
+    background-color: #facc15;
+    color: black;
+    cursor: pointer;
+}
+
+#submit-sponsore1:disabled {
+    background-color: rgb(225, 209, 163);
+    color: #666;
+    cursor: not-allowed;
+}
+
+#message-sponsore1:focus {
+    outline: 2px solid rgb(136, 133, 133);
+    outline-offset: 0.1rem;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+}
+
+
+.sponsore1 {
+    margin-left: 85%;
+    width: fit-content;
+    font-size: 0.85rem;
+    color: rgb(79, 77, 77);
+    cursor: pointer;
+}
+
+.sponsore1:hover,
+.sponsore1:hover i {
+    color: rgb(50, 50, 50);
+}
+
+.sponsore1 i {
+    transform: translateY(0.1rem);
+    font-size: 0.85rem;
+    color: rgb(136, 133, 133);
+}
+
+.grid-by {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+    margin-top: 0.25rem;
+}
+
+.grid-by-1 {
+    background-color: white;
+    padding: 1rem;
+    height: 82vh;
+}
+
+
+.grid-by .grid-by-1 .grid-by-1-inside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.7rem;
+}
+
+.grid-by .grid-by-1 .grid-by-1-inside img {
+    cursor: pointer;
+    margin: auto;
+}
+
+.grid-by .grid-by-1 .grid-by-1-inside p {
+    font-size: 0.80rem;
+}
+
+.grid-by .grid-by-1 .grid-by-1-inside sup {
+    display: inline-block;
+    transform: translateY(-0.2rem);
+}
+
+.grid-by div span {
+    font-size: 0.85rem;
+    color: rgb(2, 97, 164);
+    margin-top: 0.5rem;
+}
+
+.grid-by span:hover {
+    cursor: pointer;
+    color: rgb(3, 50, 85);
+}
+
+.grid-by-2 {
+    background-color: white;
+    padding: 1rem;
+    height: 82vh;
+}
+
+.grid-by .grid-by-2 div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid-by .grid-by-2 div img {
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.grid-by-3 {
+    background-color: white;
+    padding: 1rem;
+    height: 82vh;
+}
+
+
+.grid-by .grid-by-3 .grid-by-3-inside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.7rem;
+}
+
+.grid-by .grid-by-3 .grid-by-3-inside img {
+    cursor: pointer;
+    margin: auto;
+}
+
+.grid-by .grid-by-3 .grid-by-3-inside p {
+    font-size: 0.80rem;
+}
+
+.grid-by .grid-by-3 .grid-by-3-inside sup {
+    display: inline-block;
+    transform: translateY(-0.2rem);
+}
+
+
+.carousel-6 {
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+    background-color: white;
+    height: 55vh;
+    position: relative;
+}
+
+.carousel-6 div:first-child {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.carousel-6 div:first-child span {
+    font-size: 0.85rem;
+    color: rgb(2, 97, 164);
+    margin-top: 0.3rem;
+}
+
+.carousel-6 div:first-child span:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.carousel-6-box {
+    overflow: hidden;
+}
+
+.carousel-6-slider {
+    display: flex;
+    gap: 0.5rem;
+    transition: transform 0.5s ease;
+    /* transition effect */
+}
+
+.carousel-6-slider img {
+    width: 22.5vw;
+    height: 18vw;
+    cursor: pointer;
+}
+
+.prev-6,
+.next-6 {
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    padding: 1.5rem 1rem;
+    border: 1px solid rgb(136, 133, 133);
+    background-color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: rgb(90, 89, 89);
+    border-radius: 5px;
+}
+
+.prev-6 {
+    left: 0;
+    transform: translateX(30%);
+}
+
+.next-6 {
+    right: 0;
+    transform: translateX(-30%);
+}
+
+.prev-6:hover,
+.next-6:hover {
+    color: black;
+}
+
+.carousel-6-scrollbar {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.carousel-6-scrollbar-thumb {
+    height: 100%;
+    width: 20% !important;
+    /* since 5 pages → thumb is 1/5 of total */
+    background-color: rgb(136, 133, 133);
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+
+.prev-6,
+.next-6,
+.carousel-6-scrollbar {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.grid-carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 1rem;
+}
+
+.grid-carousel-1,
+.grid-carousel-2,
+.grid-carousel-3 {
+    background-color: white;
+    padding: 1rem;
+    height: 82vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-carousel h3 {
+    font-size: 1.35rem;
+    margin-bottom: 1.75rem;
+}
+
+.grid-carousel p {
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.carousel-in-grid {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+}
+
+.carousel-in-grid img {
+    cursor: pointer;
+    width: 60%;
+    height: 100%;
+    margin-left: 3.3vw;
+    margin-right: 8vw;
+}
+
+.prev-cg1,
+.next-cg1 {
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    opacity: 0.7;
+    color: rgb(16, 1, 1);
+    font-size: 2.5rem;
+    font-weight: 100;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-55%);
+    width: 3.5rem;
+    height: 40vh;
+}
+
+.prev-cg1 {
+    left: 1rem;
+}
+
+.next-cg1 {
+    right: 1rem;
+}
+
+.carousel-in-grid2 {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+}
+
+.carousel-in-grid2 img {
+    cursor: pointer;
+    width: 65%;
+    height: 100%;
+    margin-left: 5.75vw;
+    margin-right: 4.35vw;
+}
+
+.prev-cg2,
+.next-cg2 {
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    opacity: 0.7;
+    color: rgb(16, 1, 1);
+    font-size: 2.5rem;
+    font-weight: 100;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-55%);
+    width: 3.5rem;
+    height: 40vh;
+}
+
+.prev-cg2 {
+    left: 1rem;
+}
+
+.next-cg2 {
+    right: 1rem;
+}
+
+.carousel-in-grid3 {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+}
+
+.carousel-in-grid3 img {
+    cursor: pointer;
+    width: 60%;
+    height: 100%;
+}
+
+.prev-cg3,
+.next-cg3 {
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    opacity: 0.7;
+    color: rgb(16, 1, 1);
+    font-size: 2.5rem;
+    font-weight: 100;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-55%);
+    width: 3.5rem;
+    height: 40vh;
+}
+
+.prev-cg3 {
+    left: 1rem;
+}
+
+.next-cg3 {
+    right: 1rem;
+}
+
+.last-carousel{
+    background-color: white;
+    min-height: 100vh;
+    margin-top:1rem; 
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+#see-more:hover{
+    color: rgb(1, 24, 98) !important;
+    text-decoration: underline;
+    cursor: pointer;    
+}
+
+#start-over{
+    display: none;
+}
+
+#start-over:hover{
+    color: black !important;
+    text-decoration: underline;
+    cursor: pointer;    
+}
+
+.last-carousel-container{
+    overflow: hidden;
+    margin-top: 1rem;
+    padding: 0 4rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid rgba(90, 89, 89, 0.348);
+}
+
+.last-carousel-slide{
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.prev-lc,
+.next-lc{
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    background-color: white;
+    color: rgb(16, 1, 1);
+    font-size: 1.25rem;
+    font-weight: 100;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.25rem 0.75rem;
+    opacity: 0.7;
+}
+
+.prev-lc{
+    left: 2rem;
+}
+.next-lc{
+    right: 2rem;
+}
+
+.prev-lc:active,
+.next-lc:active{
+    border: 1px solid rgb(2, 97, 164);
+}
+
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.grid-content div{
+    cursor: pointer;
+}
+
+.sliding-page{
+    flex: 0 0 100%;
+}
+
+.recommendations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 28vh;
+    width: 100%;
+}
+
+#sign-recom{
+    padding: 0.5rem 4.5rem;
+    background-color: rgb(250, 184, 2);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 0.35rem 0;
+}
+
+#sign-recom:hover{
+    background-color: rgb(241, 159, 8);
+}
+
+#start-here{
+    font-size: 0.75rem;
+    color: rgb(2, 97, 164);
+    cursor: pointer; 
+    text-decoration: underline;
+}
+
+#start-here:hover{
+    color: rgb(1, 24, 98);
+}
+
+#back-to-top:hover{
+    background-color: #343944 !important;
+}
+
+footer{
+    background-color: #232F3E;
+    width: 100%;
+    padding: 2rem 0;
+    padding-bottom: 0;
+    min-height: 60vh;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(90, 89, 89, 0.348);
+}
+
+.footer div p{
+    color: rgb(233, 225, 225);
+    line-height: 1.5rem;
+}
+
+.footer div h2{
+    margin-bottom: 0.5rem;
+}
+
+.footer div p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.last-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(90, 89, 89, 0.348);
+    gap: 5rem;
+    position: relative;
+}
+
+#global-language{
+    display: inline-flex;        /* arrange children horizontally */
+    align-items: center; 
+    gap: 0.25rem;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+}
+
+#global-language:hover .lang{
+    display: block !important;
+}
+
+#flag{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    padding-right: 1rem;
+    border-radius: 2px;
+}
+
+.last-footer div{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.last-footer img:hover{
+    cursor: pointer;
+}
+
+.lang{
+    position: absolute;
+    transform: translateX(227%); /* centers under button */
+    z-index: 3;
+    width: 20vw;
+    border: 1px solid rgb(217, 215, 215);
+    font-size: 0.85rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: none !important;
+    background-color: white;
+    top: 55%;
+    left: 0;
+    color: rgb(81, 79, 79);
+}
+
+.lang form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    accent-color: red;
+}
+
+.lang form div:first-child {
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgb(217, 215, 215);
+}
+
+.lang form div:hover {
+    color: red;
+    text-decoration: underline;
+    accent-color: red;
+}
+
+.learn-more {
+    width: 100%;
+    color: rgb(2, 97, 164);
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(217, 215, 215);
+    text-align: start;
+    font-size: 0.8rem;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.end{
+    min-height: 40vh;
+    background-color: #0F1111;
+    padding: 2rem 4rem;
+}
+
+.end-top{
+    width: 60vw;
+    min-height: 20vh;
+    color: gray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    font-size: 0.75rem;
+}
+
+.end-top div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.end-top b{
+    color: white;
+}
+
+.end-bottom div span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
