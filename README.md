@@ -23,8 +23,8 @@ This project replicates the UI and interactive behavior of Amazon.in, including 
 
 🛠️ Technologies Used
 
-HTML5 – Structure
-CSS3 – Styling
-JavaScript – Interactivity (menus, modals, sliders)
-Font Awesome + Boxicons – Icons
-Amazon Ember – Typography
+🔹HTML5 – Structure
+🔹CSS3 – Styling
+🔹JavaScript – Interactivity (menus, modals, sliders)
+🔹Font Awesome + Boxicons – Icons
+🔹Amazon Ember – Typography
